@@ -4,7 +4,19 @@ body{
 main{
     display:inline-block;
 }
-.simpleContainer{
+.simple-container{
     margin-top: 1%;
     margin-bottom: 8%;
+}
+
+
+.dropdown-container{
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.dropdown-small{
+    max-height: 0px;
+}
+.dropdown-full{
+    max-height: 200px !important;
 }

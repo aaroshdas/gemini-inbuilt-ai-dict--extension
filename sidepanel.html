@@ -4,44 +4,46 @@
     <title>Side Panel</title>
   </head>
   <body>
-    <div class="simpleContainer">
+    <div class="simple-container">
       <input id ="searchBar" type="text" placeholder="Search a word/phrase...">
       <button id = "submitSearch">submit</button>
     </div>
 
-
-    <div>
+    <button id = "openSettings">Settings</button>
+    <div id = "settingDropdown" class="dropdown-container dropdown-small">
       <div>
         <input type="checkbox" name="show definitions" id="showDef" checked>
-        <main>Show definitions</main>
+        <main>Show definition</main>
       </div>
       <div>
-        <input type="checkbox" name="show synonyms" id="showSyn" checked>
-        <main>Show synonyms</main>
+        <input type="number" name="show synonyms" id="showSyn" max = "16" min = "0" placeholder="(0,16)...">
+        <main>Number of synonyms</main>    
+        
       </div>
       <div>
-        <input type="checkbox" name="show antonyms" id="showAnt" checked>
-        <main>Show antonyms</main>
+        <input type="number" name="show antonyms" id="showAnt" max="10", min="0" placeholder="(0,10)...">
+        <main>Number of antonyms</main>
       </div>
+      <button id = "submitSettings">save</button>
     </div>
 
     
 
-    <div class="simpleContainer">
+    <div class="simple-container">
       <h4>Word:</h4>
       <main id ="selectedPhrase"></main>
     </div>
-    <div class="simpleContainer">
+    <div class="simple-container">
       <h4>Definition:</h4>
       <main id = "definitions"></main>
     </div>
-    <div class="simpleContainer">
+    <div class="simple-container">
       <h4>Synonyms:</h4>
-      <main id = "synonyms"></main>
+      <ol id= "synonymList"></ol>
     </div>
-    <div class="simpleContainer"></div>
+    <div class="simple-container"></div>
       <h4>Antonyms:</h4>
-      <main id = "antonyms"></main>
+      <ol id= "antonymList"></ol>
     </div>
     
     <script src="bundle.js"></script>
