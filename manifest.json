@@ -1,0 +1,14 @@
+{
+    "manifest_version":3,
+    "name": "Word Analyzer (In-Build AI Test)",
+    "version": "1.0.0",
+    "background":{
+        "service_worker": "service-worker.js"
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html"
+    },
+
+    "permissions": ["sidePanel",  "contextMenus", "storage"],
+    "action":{"default_title": "Click to open panel"}
+} 

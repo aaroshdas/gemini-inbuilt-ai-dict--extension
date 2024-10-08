@@ -1,0 +1,9 @@
+body{
+    font-family: "Helvetica";
+}
+main{
+    display:inline-block;
+}
+.simpleContainer{
+    padding: 1%;
+}
